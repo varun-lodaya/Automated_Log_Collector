@@ -12,8 +12,7 @@ days=1
 destination=/data2
 log_type=""
 date=`date +"%m-%d-%Y"`
-#controllers=('pocsdnash20011.prod.symcpe.net', 'pocsdnash20012.prod.symcpe.net', 'pocsdnash20013.prod.symcpe.net', 'pocsdnash20014.prod.symcpe.net', 'pocsdnash20015.prod.symcpe.net')
-controllers=('pocsdnash20012.prod.symcpe.net' 'pocsdnash20013.prod.symcpe.net' 'pocsdnash20014.prod.symcpe.net')
+controllers=('controller1' 'controller2' 'controller3')
 
 #Set fonts for Help.
 NORM=`tput sgr0`
@@ -61,7 +60,7 @@ while getopts :t:l:d:u:p:k:h FLAG; do
       password=$OPTARG
       ;;
     k)  #set option "k"
-      private_key=$(cat $OPTARG)     
+      private_key=$(cat $OPTARG)
       ;;
     h)  #show help
       HELP
